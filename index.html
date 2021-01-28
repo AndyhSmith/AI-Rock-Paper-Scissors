@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Andy Smith is a student at Brigham Young University studing computer science.">
+	<meta name="keywords" content="BYU,Student,CS,2020">
+	<meta name="author" content="Andy Smith">
+    <title> Rock Paper Scissors </title>
+    
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="index.css"></link>
+
+	<!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/68a99d09f4.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+
+        <span id="games" class="info" >Games Played</span>
+        <span id="win-rate" class="info">N/A</span>
+        <span id="win" class="info">Games Played</span>
+        <span id="losses" class="info">Games Played</span>
+        <br>
+
+    
+
+    <div class="container" id="the-options">
+        <div class="option" onclick="rock()">Rock<br><img src="rock.png"></div>
+        <div class="option" onclick="paper()">Paper<br><img src="paper.png"></div>
+        <div class="option" onclick="scissors()">Scissors<br><img src="scissors.png"></div>
+    </div>
+
+    <button onclick="reset()">Reset</button>
+    <button onclick="peek()">Peek</button>
+    <div id="message"></div>
+    <div id="enemy"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
